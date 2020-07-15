@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    overflow-x: hidden;
+    font-weight: 400;
+    /* color: #fff; */
+}
+
+input, textarea, select, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+/* ############################################# */
+/* ################## Common ################### */
+/* ############################################# */
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    content: '';
+    clear: both
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.position-rel {
+    position: relative;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hide {
+    display: none;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #1e1e1e;
+    font-weight: 400;
+    padding: 0 0 20px;
+}
+.pl10 {
+    padding-left: 10px;
+}
+.pr10 {
+    padding-right: 10px;
+}
+.pl20 {
+    padding-left: 20px;
+}
+.pr20 {
+    padding-right: 20px;
+}
+
+.btn-primary {
+    font-weight: 400;
+    background: #1ab188;
+    border: none;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    padding: 15px 30px;
+}
+.btn-primary:hover {
+    background: #149c77;
+}
+.btn-secondry {
+    font-weight: 400;
+    background: #43525a;
+    border: none;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    padding: 15px 30px;
+}
+.btn-secondry:hover {
+    background: #333f46;
+}
+
+/* ############################################# */
+/* ############# Content Section ################ */
+/* ############################################# */
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+#first-content-box {
+    background: #24323d;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 5px;
+}
+#first-content-box .toprow {
+    width: 100%;
+    padding: 0 0 40px;
+}
+#first-content-box .toprow a.btn {
+    width: 50%;
+    float: left;
+}
+#first-content-box h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    padding: 0 0 35px;
+}
+#first-content-box .row {
+    width: 100%;
+    padding: 0 0 35px;
+    position: relative;
+}
+#first-content-box input[type=text],
+#first-content-box input[type=password] {
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 15px;
+    border: solid 1px #a0b3b0;
+}
+.halfcol {
+    width: 50%;
+}
+#first-content-box .red {
+    border: solid 1px #d10b0d;
+    width: 100%;
+}
+#first-content-box .error {
+    padding: 5px 0 0;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #d10b0d;
+    display: none;
+}
+#first-content-box span.fn {
+    background: url("../images/icon-fn.png") no-repeat;
+    width: 12px;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+#first-content-box span.password {
+    background: url("../images/icon-password.png") no-repeat;
+    width: 14px;
+    height: 18px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+#first-content-box input[type=submit] {
+    width: 100%;
+    height: 65px;
+    cursor: pointer;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#second-content-box {
+    background: #fff;
+    width: 100%;
+    max-width: 600px;
+    padding: 35px 0;
+}
+#second-content-box .cloud-tooltip {
+    background: #424242;
+    width: 100%;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 0 20px;
+}
+#second-content-box .cloud-tooltip strong {
+    font-weight: 700;
+}
+#second-content-box .cloud-tooltip:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #424242 transparent transparent transparent;
+ }
+ #second-content-box .info-area-box {
+     width: 100%;
+     padding: 0;
+     border: solid 1px #dcdcdc;
+     position: relative;
+ }
+.info-area-box .progressbar {
+    background: #fafafa;
+     width: 100%;
+     border-bottom: solid 1px #dcdcdc;
+ }
+ .info-area-box .progressbar .bar {
+     background: #ef5f3c;
+     border-top: solid 1px #fd7e4f;
+     width: auto;
+     height: 24px;
+ }
+ .info-area-box .progressbar .bar.wd70 {
+     width: 70%;
+ }
+ .info-area-box .inside-box {
+     width: 100%;
+     padding: 30px 40px;
+ }
+ .info-area-box .inside-box p {
+     font-size: 24px;
+     color: #828282;
+     line-height: 1.6;
+ }
+ .info-area-box .inside-box p strong {
+     font-weight: 700;
+ }
+ .info-area-box .inside-box p strong.red {
+    color: #ef5f3c;
+}
+ .info-area-box .formarea {
+     width: 100%;
+ }
+ .info-area-box .formarea .row {
+     width: 100%;
+     padding: 0 0 15px;
+ }
+ .info-area-box .formarea input[type=text] {
+    background: transparent;
+    width: 100%;
+    height: 80px;
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 5px 15px 5px 50px;
+    border: solid 1px #dcdcdc;
+}
+.info-area-box .formarea .fn {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    font-size: 24px;
+    color: #828282;
+    font-weight: 700;
+}
+.info-area-box .formarea input[type=submit] {
+    background: #1cbc2c;
+    width: 100%;
+    height: 80px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.info-area-box .formarea input[type=submit]:hover {
+    background: #15a523;
+}
+.info-area-box .formarea .downmsg {
+    width: 100%;
+    font-size: 20px;
+    font-style: italic;
+    color: #20a1d4;
+}
+.info-area-box .formarea .downmsg span {
+    cursor: pointer;
+}
+#second-content-box .bottow-row {
+    width: 100%;
+    padding: 25px 0 0;
+}
+#second-content-box .bottow-row a {
+    background: #fafafa;
+    border: solid 1px #dcdcdc;
+    border-bottom-width: 2px;
+    border-radius: 5px;
+    width: 100%;
+    color: #777777;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#second-content-box .bottow-row a:hover {
+    background: #e6e6e6;
+}
+
+#third-content-box  {
+    width: 800px;
+    margin: 0 auto;
+    background: #24323d;
+}
+#third-content-box h2 {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    padding: 0 0 35px;
+}
+#dynamic_buttons button {
+    margin: 5px;
+    background: #fafafa;
+    border: solid 1px #dcdcdc;
+    width: 18%;
+    color: #772d13;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
